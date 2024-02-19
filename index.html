@@ -41,7 +41,7 @@
                     <h2>Player 1 </h2>
                     <h3>Player Name</h3>
                     <p class="player-symbol">X</p>
-                    <button class="btn btn-alt">Edit</button>
+                    <button class="btn btn-alt" id="edit-player-1-btn">Edit</button>
                 </article>
                 </li>
                 <li>
@@ -49,7 +49,7 @@
                         <h2>Player 2 </h2>
                         <h3>Player Name</h3>
                         <p class="player-symbol">O</p>
-                        <button class="btn btn-alt">Edit</button>
+                        <button class="btn btn-alt" id="edit-player-2-btn">Edit</button>
                 </li>
              </ol>
              <button class="btn"> Start New Game</button>
@@ -61,13 +61,13 @@
                 </article>
                 <p>It's Your Turn <span id="active-player-name">Player Name</span>!</p>
                 <ol id="game-board">
+                    <li class="disabled" ></li>
                     <li></li>
-                    <li></li>
-                    <li></li>
+                    <li class="disabled" ></li>
 
                     <li></li>
-                    <li></li>
-                    <li></li>
+                    <li class="disabled" ></li>
+                    <li ></li>
 
                     <li></li>
                     <li></li>
