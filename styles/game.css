@@ -37,7 +37,7 @@
 
 }
 #game-board li {
-    background-color: rgb(215, 187, 247);
+    background-color: rgb(216, 187, 247);
     border-radius: 2px;
     cursor: pointer;
     display: flex;
