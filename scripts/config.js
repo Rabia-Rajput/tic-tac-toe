@@ -16,7 +16,7 @@ function closePlayerConfig(){
 }
 function savePlayerConfig(event){
 
-event.preventDefault();// prevent browser to send request(page doesnt reload)
+event.preventDefault();  // prevent browser to send request(page doesnt reload)
 const formData = new FormData(event.target); // (create objects with key 'new')built in blueprints
 const enteredPlayername = formData.get('playername');//.trim()//trim:remove white spaces
 
