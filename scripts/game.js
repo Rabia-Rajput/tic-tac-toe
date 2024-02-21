@@ -100,7 +100,21 @@ function resetGameStatus() {
       return gameData[0][0];
     }
   
-    
+    // Diagonal: Bottom left to top right
+    if (
+      gameData[2][0] > 0 &&
+      gameData[2][0] === gameData[1][1] &&
+      gameData[1][1] === gameData[0][2]
+    ) {
+      return gameData[2][0];
+    }
+  
+    if (currentRound === 9) {
+      return -1;
+    }
+  
+    return 0;
+  }
   
   function endGame(winnerId) {
     gameIsOver = true;
@@ -114,5 +128,4 @@ function resetGameStatus() {
       gameOverElement.firstElementChild.textContent = "It's a draw!";
     }
   }
-   }
   
